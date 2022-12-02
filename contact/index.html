@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="contact">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+  <!-- <link rel="manifest" href="./images/site.webmanifest"> -->
+  <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Contact us</title>
+</head>
+
+<body class="contact">
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <svg viewbox="0 0 60 60" width="40px" height="40px">
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+          <line x1="5%" y1="50%" x2="95%" y2="50%" />
+        </svg>
+      </div>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Contact</h1>
+  </header>
+  <main>
+    <div class="intro-wrapper">
+      <p>Sign up to get our emails about peacocks.</p>
+      <div class="image-wrapper">
+        <img src="../images/hand-bird.svg" alt="image of hands clasped to make a bird" />
+      </div>
+    </div>
+    <form>
+      <label for="first-name">First Name </label>
+      <input type="text" id="first-name" name="first-name" required minlength="2" maxlength="10" size="10">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required minlength="2">
+      <label for="email" class="">Email</label>
+      <input type="email" id="email" required>
+
+      <div class="fieldset-wrapper">
+        <fieldset>
+          <legend>Let us know how frequently you want updates</legend>
+
+          <input type="radio" id="every-day" name="frequency" value="every-day">
+          <label for="every-day">Every Day</label>
+
+          <input type="radio" id="every-week" name="frequency" value="every-week" checked>
+          <label for="every-week">Weekly</label>
+
+          <input type="radio" id="every-other" name="frequency" value="every-other">
+          <label for="every-other">Bi-monthly</label>
+
+          <input type="radio" id="monthly" name="frequency" value="monthly">
+          <label for="monthly">Once a month</label>
+
+        </fieldset>
+      </div>
+      <label for="facts">Have peacock facts? Enter them here to be featured in our emails</label>
+      <textarea name="facts" id="facts" rows="10" placeholder="Facts about peacocks."></textarea>
+      <div class="fieldset-wrapper">
+        <fieldset>
+          <legend>Which is your favorite peafowl?</legend>
+
+          <input type="checkbox" id="indian-blue" name="indian-blue">
+          <label for="indian-blue">Indian Blue Peafowl</label>
+
+          <input type="checkbox" id="green-peacock" name="green-peacock">
+          <label for="green-peacock">Green Peafowl</label>
+
+          <input type="checkbox" id="african" name="african">
+          <label for="african">African Peafowl</label>
+
+          <input type="checkbox" id="all" name="all">
+          <label for="all">I love them all equally</label>
+      </div>
+      <button class="button">Submit</button>
+
+    </form>
+
+  </main>
+  <script>
+    document.querySelector(".menu-icon").addEventListener("click", function () {
+      this.parentElement.classList.toggle("close");
+    });
+  </script>
+</body>
+
+</html>
