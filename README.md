@@ -1,5 +1,7 @@
 <!-- cSpell:enable  -->
 
+Peacocks are cool so I wanted to make a website about them. This website is an informational site about peafowl. 
+
 # Grid + Form + Style
 
 **Objectives**: Create a responsive form using grid. Create custom styles that override the basic browser form styles. Add the form to a flexbox that also contains an SVG image.
